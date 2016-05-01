@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-a9-o83">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewLinkTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,118 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppz-yV-X4I">
+                                <rect key="frame" x="464" y="124" width="30" height="30"/>
+                                <state key="normal" title="TCP"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-4b-OFA">
+                                <rect key="frame" x="276" y="329" width="49" height="30"/>
+                                <state key="normal" title="Link To"/>
+                                <connections>
+                                    <action selector="linkTo_But:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mws-uP-WVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t75-nh-7U3">
+                                <rect key="frame" x="273" y="124" width="54" height="30"/>
+                                <state key="normal" title="show IP"/>
+                                <connections>
+                                    <action selector="showIP_But:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUa-Rz-MkY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRM-hN-64Y">
+                                <rect key="frame" x="275" y="519" width="50" height="30"/>
+                                <state key="normal" title="Reboot"/>
+                                <connections>
+                                    <action selector="reboot_But:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rp5-23-k41"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ALPHA Camp Classroom" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHz-dU-SpB">
+                                <rect key="frame" x="0.0" y="225" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ac25419799" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWa-Ml-jB9">
+                                <rect key="frame" x="0.0" y="280" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spi-oK-PIK">
+                                <rect key="frame" x="447" y="177" width="47" height="30"/>
+                                <state key="normal" title="to TCP"/>
+                                <connections>
+                                    <segue destination="uiN-fM-8yv" kind="show" identifier="toTCP" id="UDD-qZ-RmI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t75-nh-7U3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="5mZ-M8-cmc"/>
+                            <constraint firstItem="Ppz-yV-X4I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="9BW-I5-YG4"/>
+                            <constraint firstItem="eiz-4b-OFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9DV-cJ-yOg"/>
+                            <constraint firstItem="BHz-dU-SpB" firstAttribute="top" secondItem="t75-nh-7U3" secondAttribute="bottom" constant="71" id="DOd-sf-zOK"/>
+                            <constraint firstItem="t75-nh-7U3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NtW-z9-dc3"/>
+                            <constraint firstItem="Ppz-yV-X4I" firstAttribute="baseline" secondItem="t75-nh-7U3" secondAttribute="baseline" id="RYb-r7-uA0"/>
+                            <constraint firstItem="BHz-dU-SpB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XUr-u5-1rj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oRM-hN-64Y" secondAttribute="bottom" constant="51" id="Z3V-8h-oI2"/>
+                            <constraint firstItem="eiz-4b-OFA" firstAttribute="top" secondItem="WWa-Ml-jB9" secondAttribute="bottom" constant="19" id="aBD-VS-JEn"/>
+                            <constraint firstAttribute="trailing" secondItem="WWa-Ml-jB9" secondAttribute="trailing" id="aq3-nc-8dX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ppz-yV-X4I" secondAttribute="trailing" constant="86" id="fDf-hK-fd5"/>
+                            <constraint firstItem="WWa-Ml-jB9" firstAttribute="top" secondItem="BHz-dU-SpB" secondAttribute="bottom" constant="25" id="jJ8-n7-slo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="spi-oK-PIK" secondAttribute="trailing" constant="86" id="qtm-9W-jXa"/>
+                            <constraint firstItem="spi-oK-PIK" firstAttribute="top" secondItem="Ppz-yV-X4I" secondAttribute="bottom" constant="23" id="r5r-Ns-WFm"/>
+                            <constraint firstItem="oRM-hN-64Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rFi-uA-FkT"/>
+                            <constraint firstItem="WWa-Ml-jB9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tz1-xM-357"/>
+                            <constraint firstItem="BHz-dU-SpB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xEy-nO-0kF"/>
+                            <constraint firstAttribute="trailing" secondItem="BHz-dU-SpB" secondAttribute="trailing" id="ymV-Ey-D0W"/>
+                            <constraint firstItem="WWa-Ml-jB9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zpM-n6-40r"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2Pq-38-5xe"/>
+                    <connections>
+                        <outlet property="idHere" destination="BHz-dU-SpB" id="D2C-qu-TY3"/>
+                        <outlet property="pwHere" destination="WWa-Ml-jB9" id="VFj-7M-ZBN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s05-ly-EVo">
+            <objects>
+                <viewController id="uiN-fM-8yv" customClass="TCPViewController" customModule="NewLinkTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="84W-KX-F75"/>
+                        <viewControllerLayoutGuide type="bottom" id="rMa-mu-czy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sCs-DR-Cws">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCF-NO-3TT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OcU-Bf-dj2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QZf-a9-o83" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lgs-2w-hK2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0iM-Ec-NmW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Aw-cv-ZeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="360"/>
         </scene>
     </scenes>
 </document>
