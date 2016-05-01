@@ -105,7 +105,47 @@
                     <view key="view" contentMode="scaleToFill" id="sCs-DR-Cws">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIS-Mt-qso">
+                                <rect key="frame" x="283" y="96" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="uiN-fM-8yv" eventType="touchUpInside" id="b8A-2I-DZM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dJ-Ub-Yxe">
+                                <rect key="frame" x="272" y="221" width="57" height="30"/>
+                                <state key="normal" title="Set Rule"/>
+                                <connections>
+                                    <action selector="setRuleButton:" destination="uiN-fM-8yv" eventType="touchUpInside" id="6JX-PA-B4U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWT-UY-jI7">
+                                <rect key="frame" x="244" y="285" width="112" height="30"/>
+                                <state key="normal" title="HeartBeatSignal"/>
+                                <connections>
+                                    <action selector="beatSignalButton:" destination="uiN-fM-8yv" eventType="touchUpInside" id="foS-75-3dX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzn-a2-avr">
+                                <rect key="frame" x="284" y="161" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="uiN-fM-8yv" eventType="touchUpInside" id="AkC-uD-bjj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HIS-Mt-qso" firstAttribute="centerX" secondItem="sCs-DR-Cws" secondAttribute="centerX" id="2Tf-0G-Cd3"/>
+                            <constraint firstItem="dzn-a2-avr" firstAttribute="centerX" secondItem="sCs-DR-Cws" secondAttribute="centerX" id="WZG-wo-8F7"/>
+                            <constraint firstItem="1dJ-Ub-Yxe" firstAttribute="centerX" secondItem="sCs-DR-Cws" secondAttribute="centerX" id="alR-xM-9J7"/>
+                            <constraint firstItem="1dJ-Ub-Yxe" firstAttribute="top" secondItem="dzn-a2-avr" secondAttribute="bottom" constant="30" id="m5v-bP-op5"/>
+                            <constraint firstItem="CWT-UY-jI7" firstAttribute="centerY" secondItem="sCs-DR-Cws" secondAttribute="centerY" id="mis-RA-Uw0"/>
+                            <constraint firstItem="dzn-a2-avr" firstAttribute="top" secondItem="HIS-Mt-qso" secondAttribute="bottom" constant="35" id="uDb-d0-1jQ"/>
+                            <constraint firstItem="CWT-UY-jI7" firstAttribute="top" secondItem="1dJ-Ub-Yxe" secondAttribute="bottom" constant="34" id="wDa-wu-6xH"/>
+                            <constraint firstItem="CWT-UY-jI7" firstAttribute="centerX" secondItem="sCs-DR-Cws" secondAttribute="centerX" id="yEp-im-bKF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCF-NO-3TT" userLabel="First Responder" sceneMemberID="firstResponder"/>

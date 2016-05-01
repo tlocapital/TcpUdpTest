@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C8D4B2820689B37D4AEACCE /* Pods_NewLinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53BE2B7C25B5D3B3DC01388 /* Pods_NewLinkTests.framework */; };
 		9F4F68901CD5EA1100696938 /* TCPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F688F1CD5EA1100696938 /* TCPViewController.swift */; };
+		9F4F68921CD6013C00696938 /* RValueTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F68911CD6013C00696938 /* RValueTable.swift */; };
 		9F53B17D1CD0AD850008AE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53B17C1CD0AD850008AE71 /* AppDelegate.swift */; };
 		9F53B17F1CD0AD850008AE71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53B17E1CD0AD850008AE71 /* ViewController.swift */; };
 		9F53B1821CD0AD850008AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F53B1801CD0AD850008AE71 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		434553A006E3709B35915ABB /* Pods-NewLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewLinkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewLinkTests/Pods-NewLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44504C87860AB53F3D035E19 /* Pods-NewLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewLinkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewLinkTests/Pods-NewLinkTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F4F688F1CD5EA1100696938 /* TCPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPViewController.swift; sourceTree = "<group>"; };
+		9F4F68911CD6013C00696938 /* RValueTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RValueTable.swift; sourceTree = "<group>"; };
 		9F53B1791CD0AD850008AE71 /* NewLinkTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewLinkTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F53B17C1CD0AD850008AE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F53B17E1CD0AD850008AE71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				9F53B17C1CD0AD850008AE71 /* AppDelegate.swift */,
 				9F53B17E1CD0AD850008AE71 /* ViewController.swift */,
 				9F4F688F1CD5EA1100696938 /* TCPViewController.swift */,
+				9F4F68911CD6013C00696938 /* RValueTable.swift */,
 				9F53B1801CD0AD850008AE71 /* Main.storyboard */,
 				9F53B1831CD0AD850008AE71 /* Assets.xcassets */,
 				9F53B1851CD0AD850008AE71 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 				9F53B17F1CD0AD850008AE71 /* ViewController.swift in Sources */,
 				9F53B17D1CD0AD850008AE71 /* AppDelegate.swift in Sources */,
 				9F4F68901CD5EA1100696938 /* TCPViewController.swift in Sources */,
+				9F4F68921CD6013C00696938 /* RValueTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
